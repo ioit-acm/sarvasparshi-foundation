@@ -1364,6 +1364,10 @@ section {
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
+.team .row {
+  margin-bottom: 30px; /* Adjust the space between rows */
+}
+
 .team .member {
   text-align: center;
   background: #fff;
@@ -1371,11 +1375,15 @@ section {
   padding: 15px;
   overflow: hidden;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Ensure that each member div expands properly */
 }
 
 .team .member img {
   border-radius: 10px;
   overflow: hidden;
+  width: 100%; /* Ensure image fills the div */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the div without distortion */
 }
 
 .team .member .member-content {
